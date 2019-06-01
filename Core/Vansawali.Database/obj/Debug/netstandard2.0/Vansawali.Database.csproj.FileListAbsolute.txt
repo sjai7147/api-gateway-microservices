@@ -1,0 +1,9 @@
+C:\JaiSingh\Personel\Manshahi\Sajara\Core\Vansawali.Database\bin\Debug\netstandard2.0\Vansawali.Database.deps.json
+C:\JaiSingh\Personel\Manshahi\Sajara\Core\Vansawali.Database\bin\Debug\netstandard2.0\Vansawali.Database.dll
+C:\JaiSingh\Personel\Manshahi\Sajara\Core\Vansawali.Database\bin\Debug\netstandard2.0\Vansawali.Database.pdb
+C:\JaiSingh\Personel\Manshahi\Sajara\Core\Vansawali.Database\obj\Debug\netstandard2.0\Vansawali.Database.csprojAssemblyReference.cache
+C:\JaiSingh\Personel\Manshahi\Sajara\Core\Vansawali.Database\obj\Debug\netstandard2.0\Vansawali.Database.csproj.CoreCompileInputs.cache
+C:\JaiSingh\Personel\Manshahi\Sajara\Core\Vansawali.Database\obj\Debug\netstandard2.0\Vansawali.Database.AssemblyInfoInputs.cache
+C:\JaiSingh\Personel\Manshahi\Sajara\Core\Vansawali.Database\obj\Debug\netstandard2.0\Vansawali.Database.AssemblyInfo.cs
+C:\JaiSingh\Personel\Manshahi\Sajara\Core\Vansawali.Database\obj\Debug\netstandard2.0\Vansawali.Database.dll
+C:\JaiSingh\Personel\Manshahi\Sajara\Core\Vansawali.Database\obj\Debug\netstandard2.0\Vansawali.Database.pdb

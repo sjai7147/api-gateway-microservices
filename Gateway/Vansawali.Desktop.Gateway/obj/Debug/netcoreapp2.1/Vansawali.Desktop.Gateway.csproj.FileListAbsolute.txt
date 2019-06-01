@@ -1,0 +1,14 @@
+C:\JaiSingh\Personel\Manshahi\Sajara\Gateway\Vansawali.Desktop.Gateway\obj\Debug\netcoreapp2.1\Vansawali.Desktop.Gateway.csprojAssemblyReference.cache
+C:\JaiSingh\Personel\Manshahi\Sajara\Gateway\Vansawali.Desktop.Gateway\obj\Debug\netcoreapp2.1\Vansawali.Desktop.Gateway.csproj.CoreCompileInputs.cache
+C:\JaiSingh\Personel\Manshahi\Sajara\Gateway\Vansawali.Desktop.Gateway\obj\Debug\netcoreapp2.1\Vansawali.Desktop.Gateway.RazorAssemblyInfo.cache
+C:\JaiSingh\Personel\Manshahi\Sajara\Gateway\Vansawali.Desktop.Gateway\obj\Debug\netcoreapp2.1\Vansawali.Desktop.Gateway.RazorAssemblyInfo.cs
+C:\JaiSingh\Personel\Manshahi\Sajara\Gateway\Vansawali.Desktop.Gateway\obj\Debug\netcoreapp2.1\Vansawali.Desktop.Gateway.AssemblyInfoInputs.cache
+C:\JaiSingh\Personel\Manshahi\Sajara\Gateway\Vansawali.Desktop.Gateway\obj\Debug\netcoreapp2.1\Vansawali.Desktop.Gateway.AssemblyInfo.cs
+C:\JaiSingh\Personel\Manshahi\Sajara\Gateway\Vansawali.Desktop.Gateway\bin\Debug\netcoreapp2.1\Vansawali.Desktop.Gateway.deps.json
+C:\JaiSingh\Personel\Manshahi\Sajara\Gateway\Vansawali.Desktop.Gateway\bin\Debug\netcoreapp2.1\Vansawali.Desktop.Gateway.runtimeconfig.json
+C:\JaiSingh\Personel\Manshahi\Sajara\Gateway\Vansawali.Desktop.Gateway\bin\Debug\netcoreapp2.1\Vansawali.Desktop.Gateway.runtimeconfig.dev.json
+C:\JaiSingh\Personel\Manshahi\Sajara\Gateway\Vansawali.Desktop.Gateway\bin\Debug\netcoreapp2.1\Vansawali.Desktop.Gateway.dll
+C:\JaiSingh\Personel\Manshahi\Sajara\Gateway\Vansawali.Desktop.Gateway\bin\Debug\netcoreapp2.1\Vansawali.Desktop.Gateway.pdb
+C:\JaiSingh\Personel\Manshahi\Sajara\Gateway\Vansawali.Desktop.Gateway\obj\Debug\netcoreapp2.1\Vansawali.Desktop.Gateway.RazorTargetAssemblyInfo.cache
+C:\JaiSingh\Personel\Manshahi\Sajara\Gateway\Vansawali.Desktop.Gateway\obj\Debug\netcoreapp2.1\Vansawali.Desktop.Gateway.dll
+C:\JaiSingh\Personel\Manshahi\Sajara\Gateway\Vansawali.Desktop.Gateway\obj\Debug\netcoreapp2.1\Vansawali.Desktop.Gateway.pdb

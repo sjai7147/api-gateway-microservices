@@ -1,0 +1,56 @@
+<ion-content >
+  <div class="login-background">
+      <ion-card class="welcome">
+          <ion-img class="shiv-img" src="../../assets/images/shiv-parvati.jpg"></ion-img>
+      </ion-card>
+ 
+  <ion-card>
+  
+     <ul #tabs class="ul-list">
+       <li class="li-list li-active" (click)="toggleTab(true,$event)">Login</li>
+       <li class="li-list" (click)="toggleTab(false,$event)">Register</li>
+     </ul>
+   
+   <div #login class="content" style="display:block">
+   <div>
+       <div class="form-row">
+          <ion-label class="form-label">UserId</ion-label>
+          <ion-input></ion-input>
+       </div>
+       <div class="form-row">
+          <ion-label class="form-label" >Password</ion-label>
+          <ion-input></ion-input>
+        </div>
+        <div class="form-row centre">
+            <ion-button expand="block" (click)="userLogin()">Login</ion-button>
+        </div>
+      </div> 
+    
+   </div>
+   <div #register class="content" style="display:none">
+   <div>
+     
+       <div class="form-row">
+         <label class="form-label">Name</label>
+         <ion-input></ion-input>
+       </div>
+       <div class="form-row">
+          <label class="form-label">MobileNo</label>
+          <ion-input></ion-input>
+        </div>
+        <div class="form-row">
+            <label class="form-label">Email</label>
+            <ion-input></ion-input>
+          </div>
+          <div class="form-row">
+              <label class="form-label">Password</label>
+              <ion-input></ion-input>
+            </div>
+            <div class="form-row">
+               <ion-button expand="block" (click)="userRegister()">Register</ion-button>
+              </div>
+        </div>
+   </div>
+  </ion-card>
+</div>
+</ion-content>

@@ -1,0 +1,13 @@
+<ion-content>
+    <form autocomplete="off">
+      <div class="autocomplete">
+        <input #autoInput (input)="inputString($event)" (keydown)="inputOnKeyDown($event)" type="text" name="myCountry" placeholder="{{placeHolder}}">
+      <div  id="autocomplete-list" class="autocomplete-items">
+        <div *ngFor="let item of items" (click)="listClick($event)" class="">
+          {{item.name}}
+        </div>        
+      </div>
+    </div>
+      <input type="submit">
+    </form>
+</ion-content>

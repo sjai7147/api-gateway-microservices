@@ -1,0 +1,14 @@
+C:\JaiSingh\Personel\Manshahi\Sajara\Services\Person.api\bin\Debug\netcoreapp2.1\Person.api.deps.json
+C:\JaiSingh\Personel\Manshahi\Sajara\Services\Person.api\bin\Debug\netcoreapp2.1\Person.api.runtimeconfig.json
+C:\JaiSingh\Personel\Manshahi\Sajara\Services\Person.api\bin\Debug\netcoreapp2.1\Person.api.runtimeconfig.dev.json
+C:\JaiSingh\Personel\Manshahi\Sajara\Services\Person.api\bin\Debug\netcoreapp2.1\Person.api.dll
+C:\JaiSingh\Personel\Manshahi\Sajara\Services\Person.api\bin\Debug\netcoreapp2.1\Person.api.pdb
+C:\JaiSingh\Personel\Manshahi\Sajara\Services\Person.api\obj\Debug\netcoreapp2.1\Person.api.csprojAssemblyReference.cache
+C:\JaiSingh\Personel\Manshahi\Sajara\Services\Person.api\obj\Debug\netcoreapp2.1\Person.api.csproj.CoreCompileInputs.cache
+C:\JaiSingh\Personel\Manshahi\Sajara\Services\Person.api\obj\Debug\netcoreapp2.1\Person.api.RazorAssemblyInfo.cache
+C:\JaiSingh\Personel\Manshahi\Sajara\Services\Person.api\obj\Debug\netcoreapp2.1\Person.api.RazorAssemblyInfo.cs
+C:\JaiSingh\Personel\Manshahi\Sajara\Services\Person.api\obj\Debug\netcoreapp2.1\Person.api.AssemblyInfoInputs.cache
+C:\JaiSingh\Personel\Manshahi\Sajara\Services\Person.api\obj\Debug\netcoreapp2.1\Person.api.AssemblyInfo.cs
+C:\JaiSingh\Personel\Manshahi\Sajara\Services\Person.api\obj\Debug\netcoreapp2.1\Person.api.RazorTargetAssemblyInfo.cache
+C:\JaiSingh\Personel\Manshahi\Sajara\Services\Person.api\obj\Debug\netcoreapp2.1\Person.api.dll
+C:\JaiSingh\Personel\Manshahi\Sajara\Services\Person.api\obj\Debug\netcoreapp2.1\Person.api.pdb

@@ -1,0 +1,61 @@
+ .ul-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.li-list {
+    display: inline-block;   
+    min-width: 50%;
+    border-bottom: 4px solid grey;
+    height: 30px;
+    padding-bottom: 2px;
+    padding-top: 7px;
+    padding-left: 10px;
+
+}
+.li-active{
+    font-weight: bold;
+    color: white;
+    border-color: #f44336!important;
+}
+.content {    
+    background-color: goldenrod;
+}
+.login-background{
+    background-color: gold;
+    height: 100%;
+}
+ion-card{
+    background-color: goldenrod;
+}
+ion-input{
+    border-radius: 5px;
+    padding-left: 5px;
+    background-color:white;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.form-row{
+    display: flex;
+    direction: ltr;
+    padding-top: 5px;
+}
+.form-label{
+    margin-left: 2px;
+    padding-right: 2px;
+    width:18%;
+    direction: rtl;   
+}
+.centre{
+    align-items: center;
+}
+.welcome{
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin-left: 40%;
+   
+}
+.shiv-img{
+    background-size: 100% 100%;
+}
