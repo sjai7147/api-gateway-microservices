@@ -11506,11 +11506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\JaiSingh\\Personel\\Manshahi\\Sajara\\Services\\Message.api\\Message.api.csproj",
+      "projectUniqueName": "c:\\JaiSingh\\Personel\\Manshahi\\Vansawali\\api-gateway-microservices\\services\\Message.api\\Message.api.csproj",
       "projectName": "Message.api",
-      "projectPath": "C:\\JaiSingh\\Personel\\Manshahi\\Sajara\\Services\\Message.api\\Message.api.csproj",
+      "projectPath": "c:\\JaiSingh\\Personel\\Manshahi\\Vansawali\\api-gateway-microservices\\services\\Message.api\\Message.api.csproj",
       "packagesPath": "C:\\Users\\singhja\\.nuget\\packages\\",
-      "outputPath": "C:\\JaiSingh\\Personel\\Manshahi\\Sajara\\Services\\Message.api\\obj\\",
+      "outputPath": "c:\\JaiSingh\\Personel\\Manshahi\\Vansawali\\api-gateway-microservices\\services\\Message.api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

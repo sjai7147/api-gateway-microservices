@@ -10,7 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-
+using Vansawali.Infra;
+using Vansawali.DataBase.DomainContext;
+using Microsoft.EntityFrameworkCore;
 namespace Person.api
 {
     public class Startup
@@ -26,6 +28,11 @@ namespace Person.api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.Configure<FormOptions>(options =>
+                {
+                    options.MultipartBodyLengthLimit = 100000000;
+                });
+            services.AddScoped(typeof(IPersonService), typeof(PersonsService));
             services.AddDbContext<VansawaliContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Default")));
         }
 

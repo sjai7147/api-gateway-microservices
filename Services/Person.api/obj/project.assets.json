@@ -1683,6 +1683,19 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Relational.Design/1.1.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "1.1.6",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore.SqlServer/2.1.1": {
         "type": "package",
         "dependencies": {
@@ -1694,6 +1707,20 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.SqlServer.Design/1.1.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.6",
+          "Microsoft.EntityFrameworkCore.SqlServer": "1.1.6",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.Design.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.Design.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore.Tools/2.1.1": {
@@ -4333,6 +4360,34 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "Vansawali.Database/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.1.1",
+          "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.6",
+          "Microsoft.EntityFrameworkCore.Tools": "2.1.1"
+        },
+        "compile": {
+          "bin/placeholder/Vansawali.Database.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Vansawali.Database.dll": {}
+        }
+      },
+      "vansawali.infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Vansawali.Database": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/vansawali.infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/vansawali.infra.dll": {}
+        }
       }
     }
   },
@@ -5718,6 +5773,20 @@
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
+    "Microsoft.EntityFrameworkCore.Relational.Design/1.1.6": {
+      "sha512": "XVlEYWa4C0ZeO4MbiOlrRdz3ujaHJVYe1tK0IUh8dAT5OW1qAgUKcz2VEwj41tIBxBkeyMzj5UEECdpi3KQFkg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.relational.design/1.1.6",
+      "files": [
+        ".signature.p7s",
+        "lib/net451/Microsoft.EntityFrameworkCore.Relational.Design.dll",
+        "lib/net451/Microsoft.EntityFrameworkCore.Relational.Design.xml",
+        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll",
+        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.xml",
+        "microsoft.entityframeworkcore.relational.design.1.1.6.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.design.nuspec"
+      ]
+    },
     "Microsoft.EntityFrameworkCore.SqlServer/2.1.1": {
       "sha512": "+owJ/RcmFOrRseb+9PEjqhoOcE7l+DeTe0Jwte0tqhYoiPxZpC6jtGhUhpftPSBkC662siPR7kNm2TfxpPVilQ==",
       "type": "package",
@@ -5728,6 +5797,20 @@
         "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
         "microsoft.entityframeworkcore.sqlserver.2.1.1.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.SqlServer.Design/1.1.6": {
+      "sha512": "UgXcudeAi4mFO3Ynk12lfEDbsNWmDS8IgX+kJKrgxFaAl/E3yzJmF+8kR0MJ1n7NHAeAzL+Hb6w1+K6x9Yss8A==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.sqlserver.design/1.1.6",
+      "files": [
+        ".signature.p7s",
+        "lib/net451/Microsoft.EntityFrameworkCore.SqlServer.Design.dll",
+        "lib/net451/Microsoft.EntityFrameworkCore.SqlServer.Design.xml",
+        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.Design.dll",
+        "lib/netstandard1.3/Microsoft.EntityFrameworkCore.SqlServer.Design.xml",
+        "microsoft.entityframeworkcore.sqlserver.design.1.1.6.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlserver.design.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Tools/2.1.1": {
@@ -11491,12 +11574,27 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "Vansawali.Database/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Vansawali.Database/Vansawali.Database.csproj",
+      "msbuildProject": "../../Core/Vansawali.Database/Vansawali.Database.csproj"
+    },
+    "vansawali.infra/1.0.0": {
+      "type": "project",
+      "path": "../../core/vansawali.infra/vansawali.infra.csproj",
+      "msbuildProject": "../../core/vansawali.infra/vansawali.infra.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.1",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.1",
+      "Microsoft.EntityFrameworkCore.SqlServer.Design >= 1.1.6",
+      "Microsoft.EntityFrameworkCore.Tools >= 2.1.1",
+      "Microsoft.NETCore.App >= 2.1.0",
+      "Vansawali.Database >= 1.0.0",
+      "vansawali.infra >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -11506,11 +11604,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\JaiSingh\\Personel\\Manshahi\\Sajara\\Services\\Person.api\\Person.api.csproj",
+      "projectUniqueName": "C:\\JaiSingh\\Personel\\Manshahi\\Vansawali\\api-gateway-microservices\\Services\\Person.api\\Person.api.csproj",
       "projectName": "Person.api",
-      "projectPath": "C:\\JaiSingh\\Personel\\Manshahi\\Sajara\\Services\\Person.api\\Person.api.csproj",
+      "projectPath": "C:\\JaiSingh\\Personel\\Manshahi\\Vansawali\\api-gateway-microservices\\Services\\Person.api\\Person.api.csproj",
       "packagesPath": "C:\\Users\\singhja\\.nuget\\packages\\",
-      "outputPath": "C:\\JaiSingh\\Personel\\Manshahi\\Sajara\\Services\\Person.api\\obj\\",
+      "outputPath": "C:\\JaiSingh\\Personel\\Manshahi\\Vansawali\\api-gateway-microservices\\Services\\Person.api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -11526,7 +11624,14 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\JaiSingh\\Personel\\Manshahi\\Vansawali\\api-gateway-microservices\\Core\\Vansawali.Database\\Vansawali.Database.csproj": {
+              "projectPath": "C:\\JaiSingh\\Personel\\Manshahi\\Vansawali\\api-gateway-microservices\\Core\\Vansawali.Database\\Vansawali.Database.csproj"
+            },
+            "C:\\JaiSingh\\Personel\\Manshahi\\Vansawali\\api-gateway-microservices\\core\\vansawali.infra\\vansawali.infra.csproj": {
+              "projectPath": "C:\\JaiSingh\\Personel\\Manshahi\\Vansawali\\api-gateway-microservices\\core\\vansawali.infra\\vansawali.infra.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -11543,6 +11648,18 @@
             "target": "Package",
             "version": "[2.1.1, )",
             "autoReferenced": true
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "[2.1.1, )"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer.Design": {
+            "target": "Package",
+            "version": "[1.1.6, )"
+          },
+          "Microsoft.EntityFrameworkCore.Tools": {
+            "target": "Package",
+            "version": "[2.1.1, )"
           },
           "Microsoft.NETCore.App": {
             "target": "Package",
