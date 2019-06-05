@@ -1,0 +1,45 @@
+
+1:-> Docker version
+2:-> Docker container run container:tag
+3:- >Checking the Microsoft Repository and Download SQL Server
+Now that Docker is successfully installed and running, you can begin creating a SQL Server container. Check the Microsoft repository at Docker:
+>docker search microsoft
+
+4:-Download the SQL Server repository locally. These are big files.
+>docker pull microsoft/mssql-server-windows-developer
+
+5:-Check the local repository images that were downloaded:
+>Docker images 
+
+6:-Spin up a SQL Server Instance
+Once the image has been downloaded, it’s time to spin up the SQL Server instance. From an elevated PowerShell session, you can use the docker run command to set the required properties and run the instance. Here is an explanation of the parameters:
+
+——name (provide a friendly name for the container)
+—d (executes the container in background)
+—p (port mapping)
+port:port (14331:1433) – Here we are mapping the port of the container (14331) with the 1433 port to SQL. We are doing that because we will create 2 SQL Server containers. If you will be connecting to SQL from the OS host or only one container you can map as 1433:1433 as each container has its own IP. As we are connecting externally also (from my physical machine too) there is only one IP (the OS host VM). What will differentiate the container is the port.
+—e (creates environment variables under the container execution runtime)
+sa_password ( assign the SQL Server SA password – s@12345)
+ACCEPT_EULA (pass Y)
+Run this command and modify the password if you wish.
+
+ >Docker run --name sql01 -d -p 14333:1433 -e sa_password=s@12345 -e ACCEPT_EULA=Y microsoft/mssql-server-windows-developer 
+
+7:-check which containers are executing.
+
+>docker ps
+
+8:- Connecting to the SQL Server
+To connect to SQL Server from inside the VM, you need to know the IP of the container. Inspect <container name> will return a lot of information. You need to find the correct node in the JSON document and save it in a variable
+
+>docker inspect imageName (like docker inspect sql01 )
+ 9:- To start a container, use the docker container start command.
+
+>docker container start sql01
+You can also stop, restart, remove, and more with the Docker container command. For example, this script stops the SQL Server instance and then removes it.
+
+>Docker container stop sql01
+>Docker container rm sql01
+
+10:-
+

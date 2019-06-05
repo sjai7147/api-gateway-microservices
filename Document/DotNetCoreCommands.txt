@@ -1,0 +1,43 @@
+dotnet sln --name <solutionname>
+dotnet new classlib --name <name>
+dotnat sln add <project path>
+dotnet restore
+==================1===================================
+1: Add the Entity Framework Core and Tools packages to the project:
+
+> dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+> dotnet add package Microsoft.EntityFrameworkCore.Tools 
+> dotnet add package Microsoft.EntityFrameworkCore.SqlServer.Design
+
+The first package is the EF Core provider for SQL Server. The second package contains the Entity Framework Core commands. Both of these packages are 
+required for any Entity Framework Core application that targets SQL Server. The final package is required for supporting the scaffolding of the model.
+Test to see if ef commands are available to you:
+> dotnet ef -h
+
+
+The -o option (or alternatively --output-dir) specifies the directory where the class files will be generated. If it is omitted, the class files will be generated in the project directory (where the .csproj file is located).
+The DbContext class will take the name of the database plus "Context", You can override this using the -c or --context option e.g.
+> dotnet ef dbcontext scaffold "Server=.\;Database=AdventureWorksLT2012;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o Model -c "AdventureContext"
+ex:
+1:  dotnet ef dbcontext scaffold "Server=LP-5CD8071S2R\SQLEXPRESS;Database=HtmlTool;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o ../HtmlTool.Dal/DomainModel -c "HtmlToolContext" --force
+goto webapi project and run command
+2:  dotnet ef dbcontext scaffold "Server=LP-5CD8071S2R\SQLEXPRESS;Database=Sajara;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -o  ../../Core/Vansawali.Database/DomainModel --context-dir ../../Core/Vansawali.Database/DomainContext  -c "VansawaliContext" --force
+Add Epplus dll
+> dotnet add package EPPlus
+
+Add refrence of one project to another project
+> dotnet add reference <project csproj file path
+ex
+> dotnet add reference ../ExcelHtmlGen.DAL/ExcelHtmlGen.DAL.csproj
+> dotnet add reference ../ExcelHtmlGen.ExportFExcel/ExcelHtmlGen.ExportFExcel.csproj
+
+Using Serilog
+Add packages
+> dotnet add package Serilog.AspNetCore
+> dotnet add package Serilog.Sinks.File
+
+Publish >net Core
+> dotnet publish --configuration Release -o C:\JaiSingh\Publish\Excelprocessor
+
+run dotnet core
+> dotnet run
