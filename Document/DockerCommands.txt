@@ -41,5 +41,6 @@ You can also stop, restart, remove, and more with the Docker container command. 
 >Docker container stop sql01
 >Docker container rm sql01
 
-10:-
+10:-inspect ip address and all other information
+ >Docker inspect
 

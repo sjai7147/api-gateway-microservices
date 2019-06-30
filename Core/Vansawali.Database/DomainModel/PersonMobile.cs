@@ -10,7 +10,7 @@ namespace Vansawali.DataBase.DomainModel
         public string MobileNo { get; set; }
         public int? UploadBy { get; set; }
 
-        public Person Person { get; set; }
-        public UserLogin UploadByNavigation { get; set; }
+        public virtual Person Person { get; set; }
+        public virtual UserLogin UploadByNavigation { get; set; }
     }
 }

@@ -17,7 +17,7 @@ namespace Vansawali.DataBase.DomainModel
         public int? CreatedBy { get; set; }
         public DateTime? CreatedDate { get; set; }
 
-        public UserLogin CreatedByNavigation { get; set; }
-        public ICollection<Person> Person { get; set; }
+        public virtual UserLogin CreatedByNavigation { get; set; }
+        public virtual ICollection<Person> Person { get; set; }
     }
 }

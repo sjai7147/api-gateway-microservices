@@ -2,6 +2,9 @@ create database Sajara
 GO
 use[Sajara]
 GO
+IF OBJECT_ID('dbo.Roles', 'U') IS NOT NULL
+ DROP TABLE dbo.Roles;
+ GO
 create table Roles
 (
 RoleId int identity not null primary key,
@@ -10,6 +13,9 @@ RoleValue int,
 IsValid bit default(1)
 )
 GO
+IF OBJECT_ID('dbo.UserLogin', 'U') IS NOT NULL
+ DROP TABLE dbo.UserLogin;
+ GO
 create table UserLogin
 (
 Id int identity not null primary key,
@@ -21,6 +27,9 @@ RoleId int foreign key references Roles(RoleId),
 Name nvarchar(200)
 )
 GO
+IF OBJECT_ID('dbo.Village', 'U') IS NOT NULL
+ DROP TABLE dbo.Village;
+ GO
 create table Village
 (
 VillageId int identity primary key not null,
@@ -31,19 +40,26 @@ CreatedBy int foreign key references UserLogin(Id),
 CreatedDate datetime default(getdate()),
 )
 GO
+IF OBJECT_ID('dbo.Relation', 'U') IS NOT NULL
+ DROP TABLE dbo.Relation;
+ GO
 create table Relation
 (
-RelationId int identity not null primary key,
+Id int identity not null,
+RelationId int  not null primary key,
 Relation varchar(200),
 IsValid bit default(1)
 )
 GO
 
+IF OBJECT_ID('dbo.Person', 'U') IS NOT NULL
+ DROP TABLE dbo.Person;
+ GO
 Create table Person
 (
 Id int identity unique not null,
 PersonId int primary key not null,
-ParentId int unique foreign key references Person(PersonId),
+ParentId int  foreign key references Person(PersonId),
 Name nvarchar(300) not null,
 DateOfBirth dateTime,
 LiveTill datetime,
@@ -57,7 +73,9 @@ CreatedDate datetime default(getdate()),
 IsValid bit default(1)
 )
 GO
---drop table PersonHistory
+IF OBJECT_ID('dbo.PersonHistory', 'U') IS NOT NULL
+ DROP TABLE dbo.PersonHistory;
+ GO
 create table PersonHistory
 (
 HistoryId int identity not null primary key,
@@ -65,6 +83,9 @@ PersonId int foreign key references Person(PersonId),
 History nvarchar(4000)
 )
 Go
+IF OBJECT_ID('dbo.PersonImage', 'U') IS NOT NULL
+ DROP TABLE dbo.PersonImage;
+ GO
 create table PersonImage
 (
 ImageId int identity not null primary key,
@@ -73,6 +94,9 @@ ImageUrl varchar(400),
 UploadBy int foreign key references UserLogin(Id)
 )
 GO
+IF OBJECT_ID('dbo.PersonMobile', 'U') IS NOT NULL
+ DROP TABLE dbo.PersonMobile;
+ GO
 create table PersonMobile
 (
 id int identity not null,

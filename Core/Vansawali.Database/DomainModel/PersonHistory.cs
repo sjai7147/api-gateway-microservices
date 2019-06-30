@@ -9,6 +9,6 @@ namespace Vansawali.DataBase.DomainModel
         public int? PersonId { get; set; }
         public string History { get; set; }
 
-        public Person Person { get; set; }
+        public virtual Person Person { get; set; }
     }
 }

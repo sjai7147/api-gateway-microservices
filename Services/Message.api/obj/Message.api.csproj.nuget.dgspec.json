@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\api-gateway-microservices\\services\\Message.api\\Message.api.csproj": {}
+  },
+  "projects": {
+    "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\api-gateway-microservices\\services\\Message.api\\Message.api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\api-gateway-microservices\\services\\Message.api\\Message.api.csproj",
+        "projectName": "Message.api",
+        "projectPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\api-gateway-microservices\\services\\Message.api\\Message.api.csproj",
+        "packagesPath": "C:\\Users\\singhja\\.nuget\\packages\\",
+        "outputPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\api-gateway-microservices\\services\\Message.api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\singhja\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

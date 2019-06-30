@@ -8,7 +8,7 @@ import { AutocompleteItem } from '../autocomplete-item';
 })
 export class AutocompletePage implements OnInit {
  public items:  Array<AutocompleteItem>=new Array<AutocompleteItem>();
- @ViewChild('autoInput') autoInput:ElementRef;
+ @ViewChild('autoInput', {read: ElementRef,static:true}) autoInput:ElementRef;
  @Output()selectedValue:EventEmitter<AutocompleteItem>=new EventEmitter<AutocompleteItem>();
  private currentFocus:number=0;
   constructor() { 

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Vansawali.Infra;
+using Vansawali.Infra.Models;
 namespace Person.api.Controllers
 {
     [Route("api/[controller]")]
@@ -12,21 +13,27 @@ namespace Person.api.Controllers
     {
         private IPersonService _PersonService;
         public PersonsController(IPersonService PersonService){
-this._PersonService=PersonService;
+                this._PersonService=PersonService;
         }
-        // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<Vansawali.DataBase.DomainModel.Person>> Get()
+      
+      // This method is used to get person details acoording to personid
+        // GET api/Persons/5
+        [HttpGet("GetPersonById/{personid}")]
+        public ActionResult<PersonDetails> Get(int personid)
         {
-            return this._PersonService.GetPersonList();
-            //return new string[] { "value1", "value2" };
+            return this._PersonService.GetPersonDetails(personid);  
         }
-
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
+        [HttpGet()]
+        [Route("GetPersonHierarchy/{personid}/{name?}")]
+        public ActionResult <IEnumerable<IOutData>> Get(int personid,int name){
+            //Console.Write("PErsonId: "+personid);
+            SearchPerson person= new SearchPerson{ PersonId=personid};
+            return this._PersonService.GetPersonHierarchyById(person);
+        }
+        [HttpGet("SearchPersonByName/{name}")]
+        public ActionResult <IEnumerable<IOutData>> Get(string name){
+            SearchPerson person= new SearchPerson{ PersonId=0,Name=name};
+            return this._PersonService.GetPersonListByName(person);
         }
 
         // POST api/values

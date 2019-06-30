@@ -15,6 +15,6 @@ namespace Vansawali.DataBase.DomainModel
         public int? RoleValue { get; set; }
         public bool? IsValid { get; set; }
 
-        public ICollection<UserLogin> UserLogin { get; set; }
+        public virtual ICollection<UserLogin> UserLogin { get; set; }
     }
 }

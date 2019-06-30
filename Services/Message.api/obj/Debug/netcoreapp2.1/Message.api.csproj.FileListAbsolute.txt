@@ -1,0 +1,14 @@
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\services\Message.api\bin\Debug\netcoreapp2.1\Message.api.deps.json
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\services\Message.api\bin\Debug\netcoreapp2.1\Message.api.runtimeconfig.json
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\services\Message.api\bin\Debug\netcoreapp2.1\Message.api.runtimeconfig.dev.json
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\services\Message.api\bin\Debug\netcoreapp2.1\Message.api.dll
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\services\Message.api\bin\Debug\netcoreapp2.1\Message.api.pdb
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\services\Message.api\obj\Debug\netcoreapp2.1\Message.api.csprojAssemblyReference.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\services\Message.api\obj\Debug\netcoreapp2.1\Message.api.csproj.CoreCompileInputs.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\services\Message.api\obj\Debug\netcoreapp2.1\Message.api.RazorAssemblyInfo.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\services\Message.api\obj\Debug\netcoreapp2.1\Message.api.RazorAssemblyInfo.cs
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\services\Message.api\obj\Debug\netcoreapp2.1\Message.api.AssemblyInfoInputs.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\services\Message.api\obj\Debug\netcoreapp2.1\Message.api.AssemblyInfo.cs
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\services\Message.api\obj\Debug\netcoreapp2.1\Message.api.RazorTargetAssemblyInfo.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\services\Message.api\obj\Debug\netcoreapp2.1\Message.api.dll
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\services\Message.api\obj\Debug\netcoreapp2.1\Message.api.pdb

@@ -28,10 +28,11 @@ namespace Person.api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.Configure<FormOptions>(options =>
-                {
-                    options.MultipartBodyLengthLimit = 100000000;
-                });
+              services.AddCors(options =>
+                                {
+                                options.AddPolicy("AllowAllOrigin",
+                                builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+                                });
             services.AddScoped(typeof(IPersonService), typeof(PersonsService));
             services.AddDbContext<VansawaliContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Default")));
         }
@@ -47,7 +48,7 @@ namespace Person.api
             {
                 app.UseHsts();
             }
-
+            app.UseCors("AllowAllOrigin");
             app.UseHttpsRedirection();
             app.UseMvc();
         }

@@ -7,5 +7,29 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-    <app-autocomplete placeHolder="Search name"></app-autocomplete>
+  <!-- <mat-form-field>
+      <mat-label>Select village</mat-label>
+    <mat-select placeholder="select village..." [(value)]="selectedValue">
+      <mat-option *ngFor="let village of villageList" [value]="village.villageId">
+        {{village.villageName}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field> -->
+    <mat-form-field class="container">
+    <mat-label>Search</mat-label>
+   
+        <input type="text" placeholder="Search person ..."
+            matInput 
+            [formControl]="searchTerm" 
+            [matAutocomplete]="auto"  
+            >  
+
+        <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn" (optionSelected)="onSelectionChanged($event,person)">
+          <mat-option *ngFor="let person of persons" [value]="person" >
+            {{ person.name }}
+          </mat-option>
+        </mat-autocomplete>
+
+    </mat-form-field>
+    <div class="chart" id="custom-colored">  </div>
 </ion-content>

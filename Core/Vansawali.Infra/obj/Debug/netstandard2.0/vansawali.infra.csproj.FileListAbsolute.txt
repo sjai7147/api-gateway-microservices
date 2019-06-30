@@ -10,3 +10,15 @@ C:\JaiSingh\Personel\Manshahi\Vansawali\api-gateway-microservices\core\vansawali
 C:\JaiSingh\Personel\Manshahi\Vansawali\api-gateway-microservices\core\vansawali.infra\obj\Debug\netstandard2.0\vansawali.infra.csproj.CopyComplete
 C:\JaiSingh\Personel\Manshahi\Vansawali\api-gateway-microservices\core\vansawali.infra\obj\Debug\netstandard2.0\vansawali.infra.dll
 C:\JaiSingh\Personel\Manshahi\Vansawali\api-gateway-microservices\core\vansawali.infra\obj\Debug\netstandard2.0\vansawali.infra.pdb
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\core\vansawali.infra\bin\Debug\netstandard2.0\vansawali.infra.deps.json
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\core\vansawali.infra\bin\Debug\netstandard2.0\vansawali.infra.dll
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\core\vansawali.infra\bin\Debug\netstandard2.0\vansawali.infra.pdb
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\core\vansawali.infra\bin\Debug\netstandard2.0\Vansawali.Database.dll
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\core\vansawali.infra\bin\Debug\netstandard2.0\Vansawali.Database.pdb
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\core\vansawali.infra\obj\Debug\netstandard2.0\vansawali.infra.csprojAssemblyReference.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\core\vansawali.infra\obj\Debug\netstandard2.0\vansawali.infra.csproj.CoreCompileInputs.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\core\vansawali.infra\obj\Debug\netstandard2.0\vansawali.infra.AssemblyInfoInputs.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\core\vansawali.infra\obj\Debug\netstandard2.0\vansawali.infra.AssemblyInfo.cs
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\core\vansawali.infra\obj\Debug\netstandard2.0\vansawali.infra.csproj.CopyComplete
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\core\vansawali.infra\obj\Debug\netstandard2.0\vansawali.infra.dll
+C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\core\vansawali.infra\obj\Debug\netstandard2.0\vansawali.infra.pdb

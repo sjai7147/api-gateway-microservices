@@ -2,15 +2,11 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Vansawali.DataBase.DomainModel;
-
 namespace Vansawali.DataBase.DomainContext
 {
     public partial class VansawaliContext : DbContext
     {
-        // public VansawaliContext()
-        // {
-        // }
-
+       
         public VansawaliContext(DbContextOptions<VansawaliContext> options)
             : base(options)
         {
@@ -36,16 +32,16 @@ namespace Vansawali.DataBase.DomainContext
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.HasAnnotation("ProductVersion", "2.2.4-servicing-10062");
+
             modelBuilder.Entity<Person>(entity =>
             {
-                entity.HasKey(e => e.PersonId);
+                entity.HasKey(e => e.PersonId)
+                    .HasName("PK__Person__AA2FFBE534ED985F");
 
                 entity.HasIndex(e => e.Id)
-                    .HasName("UQ__Person__3214EC06E136671A")
+                    .HasName("UQ__Person__3214EC064682F4CE")
                     .IsUnique();
-
-                entity.HasIndex(e => new { e.PersonId, e.Name, e.RelationId, e.Gender, e.ParentId })
-                    .HasName("wife_ParentId");
 
                 entity.Property(e => e.PersonId).ValueGeneratedNever();
 
@@ -92,19 +88,21 @@ namespace Vansawali.DataBase.DomainContext
 
             modelBuilder.Entity<PersonHistory>(entity =>
             {
-                entity.HasKey(e => e.HistoryId);
+                entity.HasKey(e => e.HistoryId)
+                    .HasName("PK__PersonHi__4D7B4ABD4645FCED");
 
                 entity.Property(e => e.History).HasMaxLength(4000);
 
                 entity.HasOne(d => d.Person)
                     .WithMany(p => p.PersonHistory)
                     .HasForeignKey(d => d.PersonId)
-                    .HasConstraintName("FK__PersonHis__Perso__36B12243");
+                    .HasConstraintName("FK__PersonHis__Perso__29572725");
             });
 
             modelBuilder.Entity<PersonImage>(entity =>
             {
-                entity.HasKey(e => e.ImageId);
+                entity.HasKey(e => e.ImageId)
+                    .HasName("PK__PersonIm__7516F70CB55CF919");
 
                 entity.Property(e => e.ImageUrl)
                     .HasMaxLength(400)
@@ -113,17 +111,18 @@ namespace Vansawali.DataBase.DomainContext
                 entity.HasOne(d => d.Person)
                     .WithMany(p => p.PersonImage)
                     .HasForeignKey(d => d.PersonId)
-                    .HasConstraintName("FK__PersonIma__Perso__2B3F6F97");
+                    .HasConstraintName("FK__PersonIma__Perso__2C3393D0");
 
                 entity.HasOne(d => d.UploadByNavigation)
                     .WithMany(p => p.PersonImage)
                     .HasForeignKey(d => d.UploadBy)
-                    .HasConstraintName("FK__PersonIma__Uploa__2C3393D0");
+                    .HasConstraintName("FK__PersonIma__Uploa__2D27B809");
             });
 
             modelBuilder.Entity<PersonMobile>(entity =>
             {
-                entity.HasKey(e => e.MobileNo);
+                entity.HasKey(e => e.MobileNo)
+                    .HasName("PK__PersonMo__D6D73A877056586B");
 
                 entity.Property(e => e.MobileNo)
                     .HasMaxLength(15)
@@ -137,16 +136,23 @@ namespace Vansawali.DataBase.DomainContext
                 entity.HasOne(d => d.Person)
                     .WithMany(p => p.PersonMobile)
                     .HasForeignKey(d => d.PersonId)
-                    .HasConstraintName("FK__PersonMob__Perso__2F10007B");
+                    .HasConstraintName("FK__PersonMob__Perso__300424B4");
 
                 entity.HasOne(d => d.UploadByNavigation)
                     .WithMany(p => p.PersonMobile)
                     .HasForeignKey(d => d.UploadBy)
-                    .HasConstraintName("FK__PersonMob__Uploa__300424B4");
+                    .HasConstraintName("FK__PersonMob__Uploa__30F848ED");
             });
 
             modelBuilder.Entity<Relation>(entity =>
             {
+                entity.HasKey(e => e.RelationId)
+                    .HasName("PK__Relation__E2DA16B5666CF731");
+
+                entity.Property(e => e.RelationId).ValueGeneratedNever();
+
+                entity.Property(e => e.Id).ValueGeneratedOnAdd();
+
                 entity.Property(e => e.IsValid).HasDefaultValueSql("((1))");
 
                 entity.Property(e => e.Relation1)
@@ -157,7 +163,8 @@ namespace Vansawali.DataBase.DomainContext
 
             modelBuilder.Entity<Roles>(entity =>
             {
-                entity.HasKey(e => e.RoleId);
+                entity.HasKey(e => e.RoleId)
+                    .HasName("PK__Roles__8AFACE1ADF6CCFF4");
 
                 entity.Property(e => e.IsValid).HasDefaultValueSql("((1))");
 
@@ -169,7 +176,7 @@ namespace Vansawali.DataBase.DomainContext
             modelBuilder.Entity<UserLogin>(entity =>
             {
                 entity.HasIndex(e => e.UserId)
-                    .HasName("UQ__UserLogi__1788CC4D4F5D1C56")
+                    .HasName("UQ__UserLogi__1788CC4D500ADFB7")
                     .IsUnique();
 
                 entity.Property(e => e.CreatedOn)

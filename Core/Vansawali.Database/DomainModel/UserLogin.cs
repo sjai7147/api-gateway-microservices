@@ -21,10 +21,10 @@ namespace Vansawali.DataBase.DomainModel
         public int? RoleId { get; set; }
         public string Name { get; set; }
 
-        public Roles Role { get; set; }
-        public ICollection<Person> Person { get; set; }
-        public ICollection<PersonImage> PersonImage { get; set; }
-        public ICollection<PersonMobile> PersonMobile { get; set; }
-        public ICollection<Village> Village { get; set; }
+        public virtual Roles Role { get; set; }
+        public virtual ICollection<Person> Person { get; set; }
+        public virtual ICollection<PersonImage> PersonImage { get; set; }
+        public virtual ICollection<PersonMobile> PersonMobile { get; set; }
+        public virtual ICollection<Village> Village { get; set; }
     }
 }

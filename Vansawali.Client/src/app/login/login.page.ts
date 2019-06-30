@@ -8,9 +8,10 @@ import { AuthenticationService } from '../core/authentication.service';
 })
 export class LoginPage implements OnInit {
 
-@ViewChild('login') login:ElementRef;
-@ViewChild('register') register:ElementRef;
-@ViewChild('tabs') tabs:ElementRef;
+
+@ViewChild('login', {read: ElementRef,static:true}) login:ElementRef;
+@ViewChild('register', {read: ElementRef,static:true}) register:ElementRef;
+@ViewChild('tabs', {read: ElementRef,static:true}) tabs:ElementRef;
   constructor(private authService:AuthenticationService) { }
 
   ngOnInit() {

@@ -28,13 +28,13 @@ namespace Vansawali.DataBase.DomainModel
         public DateTime? CreatedDate { get; set; }
         public bool? IsValid { get; set; }
 
-        public UserLogin CreatedByNavigation { get; set; }
-        public Person Parent { get; set; }
-        public Relation Relation { get; set; }
-        public Village Village { get; set; }
-        public ICollection<Person> InverseParent { get; set; }
-        public ICollection<PersonHistory> PersonHistory { get; set; }
-        public ICollection<PersonImage> PersonImage { get; set; }
-        public ICollection<PersonMobile> PersonMobile { get; set; }
+        public virtual UserLogin CreatedByNavigation { get; set; }
+        public virtual Person Parent { get; set; }
+        public virtual Relation Relation { get; set; }
+        public virtual Village Village { get; set; }
+        public virtual ICollection<Person> InverseParent { get; set; }
+        public virtual ICollection<PersonHistory> PersonHistory { get; set; }
+        public virtual ICollection<PersonImage> PersonImage { get; set; }
+        public virtual ICollection<PersonMobile> PersonMobile { get; set; }
     }
 }
