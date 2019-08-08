@@ -20,7 +20,7 @@ namespace Vansawali.Infra
         SearchPerson person= ((SearchPerson)input);    
      return this._VansawaliContext.LoadStoredProc("USP_Get_Person_ByName")
      .WithSqlParam("@PersonName", person.Name)
-     //.WithSqlParam("@VillageId", person.VillageId)
+     .WithSqlParam("@VillageId", person.VillageId)
      .ExecuteStoredProc<SearchPerson>().ToList<IOutData>();
     }
      public List<IOutData> GetPersonHierarchyById(IInData input){

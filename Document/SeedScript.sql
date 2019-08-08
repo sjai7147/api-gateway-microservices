@@ -70,11 +70,14 @@ end
 GO
 
 -- drop proc USP_Get_Person_ByName
+-- below usp is used to fetch person by name without villageId and with villageId
 --USP_Get_Person_ByName 'k',2
+drop proc USP_Get_Person_ByName
+GO
 create proc USP_Get_Person_ByName
 (
-@PersonName nvarchar(300)
---@VillageId int
+@PersonName nvarchar(300),
+@VillageId int =null
 )
 as
 begin
@@ -82,7 +85,7 @@ select p.PersonId,
 p.Name+isnull((select '('+  f.Name+')' from Person as f where f.PersonId=p.ParentId and f.RelationId=2),'')+'=>'+v.VillageName Name,p.VillageId
 from Person as p
 inner join Village as v on p.VillageId=v.VillageId
-where  p.Name like '%'+@PersonName+'%' --and p.VillageId=@VillageId
+where  p.Name like '%'+@PersonName+'%' and (( @VillageId<>null and p.VillageId=@VillageId)or  1=1)
 end
 
 GO

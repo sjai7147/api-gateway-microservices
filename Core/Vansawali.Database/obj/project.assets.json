@@ -3239,11 +3239,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\api-gateway-microservices\\Core\\Vansawali.Database\\Vansawali.Database.csproj",
+      "projectUniqueName": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Core\\Vansawali.Database\\Vansawali.Database.csproj",
       "projectName": "Vansawali.Database",
-      "projectPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\api-gateway-microservices\\Core\\Vansawali.Database\\Vansawali.Database.csproj",
+      "projectPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Core\\Vansawali.Database\\Vansawali.Database.csproj",
       "packagesPath": "C:\\Users\\singhja\\.nuget\\packages\\",
-      "outputPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\api-gateway-microservices\\Core\\Vansawali.Database\\obj\\",
+      "outputPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Core\\Vansawali.Database\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

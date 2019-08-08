@@ -8,8 +8,10 @@ export class PersonService {
 
   constructor (private httpService: HttpClient) { }  
  
-  search(term) {
-      var listOfPerson = this.httpService.get('http://localhost:5005/api/persons/SearchPersonByName/' + term)
+  search(term,villageId?) {
+      let url=`http://localhost:5005/api/persons/SearchPersonByName/${term}/${villageId}`
+      //var listOfPerson = this.httpService.get('http://localhost:5005/api/persons/SearchPersonByName/' + term)
+      var listOfPerson = this.httpService.get(url)
       .pipe(
           debounceTime(500),  // WAIT FOR 500 MILISECONDS ATER EACH KEY STROKE.
           map(

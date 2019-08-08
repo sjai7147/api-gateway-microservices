@@ -1,0 +1,37 @@
+
+  <ion-content>
+      <mat-toolbar>
+          <span>Village Entry</span>
+        </mat-toolbar>
+      <mat-card>
+          <mat-card-content>
+               <mat-list>               
+              <mat-list-item>
+                  <mat-label> Search   </mat-label>     
+                      <input type="text" placeholder="Search for edit village ..."
+                      matInput 
+                      [formControl]="searchTerm" 
+                      [matAutocomplete]="auto"  
+                      >  
+                
+                  <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn" (optionSelected)="onSelectionChanged($event,village)">
+                    <mat-option *ngFor="let village of villages" [value]="village" >
+                      {{ village.villageName }}
+                    </mat-option>
+                  </mat-autocomplete>
+                 
+                </mat-list-item>
+                <mat-list-item>
+                  <mat-label>
+                    Village
+                  </mat-label>
+                  <input type="text" placeholder="Enter Village" [formControl]="villageName">
+                </mat-list-item>
+              </mat-list>
+          </mat-card-content>
+          <mat-card-actions>
+              <button mat-button (click)="saveVillage()">Save</button>
+          </mat-card-actions>
+       </mat-card>
+  </ion-content>
+

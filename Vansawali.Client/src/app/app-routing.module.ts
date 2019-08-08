@@ -21,10 +21,11 @@ const routes: Routes = [
     path: 'sajara', 
     loadChildren: './sajara/sajara.module#SajaraPageModule' 
   },
-  // { 
-  //   path: 'autocomplete', 
-  //   loadChildren: './shared/autocomplete/autocomplete.module#AutocompletePageModule' 
-  // }
+  { 
+    path: 'admin',    
+    loadChildren: './admin/admin.module#AdminModule' 
+  }
+  
 ];
 
 @NgModule({

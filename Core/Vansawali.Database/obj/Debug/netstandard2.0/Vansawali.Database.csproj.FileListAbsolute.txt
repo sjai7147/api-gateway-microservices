@@ -25,3 +25,12 @@ C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\Core\Vansawa
 C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\Core\Vansawali.Database\obj\Debug\netstandard2.0\Vansawali.Database.AssemblyInfo.cs
 C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\Core\Vansawali.Database\obj\Debug\netstandard2.0\Vansawali.Database.dll
 C:\JaiSingh\Projects\SampleProjects\Blogs\api-gateway-microservices\Core\Vansawali.Database\obj\Debug\netstandard2.0\Vansawali.Database.pdb
+C:\JaiSingh\Projects\SampleProjects\Blogs\Vansawali-client-api\Core\Vansawali.Database\bin\Debug\netstandard2.0\Vansawali.Database.deps.json
+C:\JaiSingh\Projects\SampleProjects\Blogs\Vansawali-client-api\Core\Vansawali.Database\bin\Debug\netstandard2.0\Vansawali.Database.dll
+C:\JaiSingh\Projects\SampleProjects\Blogs\Vansawali-client-api\Core\Vansawali.Database\bin\Debug\netstandard2.0\Vansawali.Database.pdb
+C:\JaiSingh\Projects\SampleProjects\Blogs\Vansawali-client-api\Core\Vansawali.Database\obj\Debug\netstandard2.0\Vansawali.Database.csprojAssemblyReference.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\Vansawali-client-api\Core\Vansawali.Database\obj\Debug\netstandard2.0\Vansawali.Database.csproj.CoreCompileInputs.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\Vansawali-client-api\Core\Vansawali.Database\obj\Debug\netstandard2.0\Vansawali.Database.AssemblyInfoInputs.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\Vansawali-client-api\Core\Vansawali.Database\obj\Debug\netstandard2.0\Vansawali.Database.AssemblyInfo.cs
+C:\JaiSingh\Projects\SampleProjects\Blogs\Vansawali-client-api\Core\Vansawali.Database\obj\Debug\netstandard2.0\Vansawali.Database.dll
+C:\JaiSingh\Projects\SampleProjects\Blogs\Vansawali-client-api\Core\Vansawali.Database\obj\Debug\netstandard2.0\Vansawali.Database.pdb

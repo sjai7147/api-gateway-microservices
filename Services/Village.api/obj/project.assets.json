@@ -12174,11 +12174,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\api-gateway-microservices\\Services\\Village.api\\Village.api.csproj",
+      "projectUniqueName": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Services\\Village.api\\Village.api.csproj",
       "projectName": "Village.api",
-      "projectPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\api-gateway-microservices\\Services\\Village.api\\Village.api.csproj",
+      "projectPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Services\\Village.api\\Village.api.csproj",
       "packagesPath": "C:\\Users\\singhja\\.nuget\\packages\\",
-      "outputPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\api-gateway-microservices\\Services\\Village.api\\obj\\",
+      "outputPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Services\\Village.api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12195,11 +12195,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\api-gateway-microservices\\Core\\Vansawali.Database\\Vansawali.Database.csproj": {
-              "projectPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\api-gateway-microservices\\Core\\Vansawali.Database\\Vansawali.Database.csproj"
+            "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Core\\Vansawali.Database\\Vansawali.Database.csproj": {
+              "projectPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Core\\Vansawali.Database\\Vansawali.Database.csproj"
             },
-            "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\api-gateway-microservices\\Core\\vansawali.infra\\vansawali.infra.csproj": {
-              "projectPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\api-gateway-microservices\\Core\\vansawali.infra\\vansawali.infra.csproj"
+            "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Core\\vansawali.infra\\vansawali.infra.csproj": {
+              "projectPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Core\\vansawali.infra\\vansawali.infra.csproj"
             }
           }
         }

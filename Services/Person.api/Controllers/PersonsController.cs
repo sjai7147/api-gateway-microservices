@@ -30,9 +30,9 @@ namespace Person.api.Controllers
             SearchPerson person= new SearchPerson{ PersonId=personid};
             return this._PersonService.GetPersonHierarchyById(person);
         }
-        [HttpGet("SearchPersonByName/{name}")]
-        public ActionResult <IEnumerable<IOutData>> Get(string name){
-            SearchPerson person= new SearchPerson{ PersonId=0,Name=name};
+        [HttpGet("SearchPersonByName/{name}/{villageId?}")]
+        public ActionResult <IEnumerable<IOutData>> Get(string name,int villageId){
+            SearchPerson person= new SearchPerson{ PersonId=0,Name=name,VillageId=villageId};
             return this._PersonService.GetPersonListByName(person);
         }
 

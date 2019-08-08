@@ -45,7 +45,7 @@ export class SajaraPage implements OnInit {
     this.villageService.GetVillages().subscribe(v=>{
       this.villageList=v;
     });
-    // this.loadChart( window['chart_config']);
+   
   }
 
   loadChart(chartJson){

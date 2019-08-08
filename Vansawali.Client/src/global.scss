@@ -10,3 +10,52 @@
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+
+    input[type="text"]{
+        max-width: 450px !important;
+        min-width: 150px;
+        width: 100% !important;
+        border-bottom: 1px solid gray !important;
+    }
+    mat-form-field {
+        margin-right: 12px;
+        display:inline-flexbox;
+      }
+      mat-label{
+          width:180px;
+      }
+      select{
+        border: none;
+        border-bottom: 1px solid gray;
+        max-width: 450px !important;
+        min-width: 150px;
+        width: 100% !important;
+      }
+      .image-box{
+        display: inline-flex
+      }
+      .person-image{
+       border: 1px solid gray;
+        height:150px;
+      }
+      .color-red{
+        color: red;
+      }
+      .invalid-feedback{
+        margin-left: 10px;
+      }
+       input[type="submit"] {
+        background: rgb(1, 29, 51);
+        border-color: transparent;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+       input[type="submit"]:hover {
+        background: #17c;
+      }
+      
+       input[type="submit"]:focus {
+        border-color: #05a;
+      }

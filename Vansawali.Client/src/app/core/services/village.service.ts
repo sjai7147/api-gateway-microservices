@@ -22,4 +22,19 @@ export class VillageService {
 
     return listOfVillages;  
   }
+
+  villageSearch(term) {
+    var listOfPerson = this.httpService.get('http://localhost:5005/api/village/SearchVillageByName/' + term)
+    .pipe(
+        debounceTime(500),  // WAIT FOR 500 MILISECONDS ATER EACH KEY STROKE.
+        map(
+            (data: any) => {
+                return (
+                    data.length != 0 ? data as any[] : [{"Village": "No Record Found"} as any]
+                );
+            }
+    ));
+
+    return listOfPerson;  
+  }
 }

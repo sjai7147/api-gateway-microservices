@@ -10,7 +10,18 @@
                 }
             ],
         "UpstreamPathTemplate": "/human-data/humans"
-        }
+        },
+        {
+            "DownstreamPathTemplate": "/api/village",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                    {
+                        "Host": "localhost",
+                        "Port": 5005
+                    }
+                ],
+            "UpstreamPathTemplate": "/vansawali/village"
+            }
     ],
     "GlobalConfiguration": {
         "BaseUrl": "http://localhost:6001"

@@ -1,0 +1,125 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+      <ion-title>Person</ion-title>    
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+     
+      <mat-card>
+         
+          <mat-card-content>
+               <mat-list>               
+             
+                <form [formGroup]="personForm" (ngSubmit)="onSubmit()">
+                  <mat-list-item >
+                    <mat-label >
+                      Select village
+                    </mat-label>
+                    <select formControlName="villageId" name="village" >
+                      <option value="null">select village</option>
+                      <option *ngFor="let village of villageList" value="{{village.villageId}}">{{village.villageName}}</option>
+                    </select>
+                    <div *ngIf="submitted && f.villageId.errors" class="invalid-feedback">
+                        <div class="color-red">*</div>
+                  </div>
+                  </mat-list-item>
+                  <mat-list-item >
+                      <mat-label >
+                        Select parent
+                      </mat-label>
+                      <!-- <select formControlName="parentId" name="parentId">
+                        <option value="null">select parent</option>
+                      </select> -->
+                      <input type="text" placeholder="Search person ..."
+                      matInput 
+                      [formControl]="searchTerm" 
+                      [matAutocomplete]="auto"  
+                      >  
+          
+                  <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn" (optionSelected)="onSelectionChanged($event,f.parentId)">
+                    <mat-option *ngFor="let person of persons" [value]="person" >
+                      {{ person.name }}
+                    </mat-option>
+                  </mat-autocomplete>
+                      <div *ngIf="submitted && f.parentId.errors" class="invalid-feedback">
+                        <div class="color-red">*</div>
+                    </div>
+                    </mat-list-item>
+                    <mat-list-item >
+                        <mat-label >
+                          Person Name
+                        </mat-label>
+                        <input autocomplete="off" formControlName="name" name="name"  matInput type="text" placeholder="Enter Name">
+                        <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                          <div class="color-red">*</div>
+                      </div>
+                      </mat-list-item>
+                      <mat-list-item >
+                        <mat-label >
+                          Relation with Parent
+                        </mat-label>
+                        <select formControlName="relationId" name="relationId" >
+                          <option value="null">select relation</option>
+                          <option value="1">Not specified</option>
+                          <option value="2">Son</option>
+                          <option value="3">Wife</option>
+                          <option value="4">Daughter</option>
+                        </select>
+                        <div *ngIf="submitted && f.relationId.errors" class="invalid-feedback">
+                            <div class="color-red">*</div>
+                      </div>
+                      </mat-list-item>
+                      <mat-list-item >
+                        
+                          <mat-label >Sex </mat-label>
+                          <mat-radio-group formControlName="sex">
+                            <mat-radio-button style="min-width: 150px;"  aria-checked  value="1" name="sex" >Male</mat-radio-button>
+                            <mat-radio-button   value="0" name="sex" >Female</mat-radio-button>                           
+                          </mat-radio-group>
+                          <div *ngIf="submitted && f.sex.errors" class="invalid-feedback">
+                              <div class="color-red">*</div>
+                        </div>
+                      </mat-list-item>
+                      <mat-list-item >
+                     <mat-form-field >
+                          <input formControlName="dateOfBirth" name="dateOfBirth"  class="input-size" matInput [matDatepicker]="dateOfBirth" placeholder="Date of birth" >
+                          <mat-datepicker-toggle matSuffix [for]="dateOfBirth"></mat-datepicker-toggle>
+                          <mat-datepicker #dateOfBirth></mat-datepicker>
+                          <div *ngIf="submitted && f.dateOfBirth.errors" class="invalid-feedback">
+                              <div class="color-red">*</div>
+                        </div>
+                        </mat-form-field>
+                          <mat-form-field  >
+                          <input formControlName="marriageDate" name="marriageDate"  class="input-size" matInput [matDatepicker]="marriageDate" placeholder="Marriage date" >
+                          <mat-datepicker-toggle matSuffix [for]="marriageDate"></mat-datepicker-toggle>
+                          <mat-datepicker #marriageDate></mat-datepicker>
+                        </mat-form-field>
+                        <mat-form-field  >
+                          <input  formControlName="liveTill" name="liveTill" class="input-size" matInput [matDatepicker]="liveTill" placeholder="Live till" >
+                          <mat-datepicker-toggle matSuffix [for]="liveTill"></mat-datepicker-toggle>
+                          <mat-datepicker #liveTill></mat-datepicker>
+                        </mat-form-field>
+                      </mat-list-item>
+                     <!-- <mat-list-item> -->
+                       <div class="image-box">
+                         <div><input type="file" #imgUpload id="imgUpload" (change)="uploadFile(imgUpload)"> </div>
+                         <div>
+                           <img class="person-image" #imgperson src={{imageSrc}} id="imgperson">
+                         </div>
+                       </div>
+                     <!-- </mat-list-item> -->
+                      <mat-list-item>
+                          <!-- <button color= "secondry" type="submit">Save</button> -->
+                          <input type="submit" color="primary" value="Save" >
+                      </mat-list-item>
+                    </form>   
+              </mat-list>
+              
+           
+          </mat-card-content>       
+       </mat-card>
+  </ion-content>
+

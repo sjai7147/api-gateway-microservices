@@ -21,6 +21,11 @@ export class AppComponent implements OnDestroy {
       title: 'Sajara',
       url: '/sajara',
       icon: 'sajara'
+    },
+    {
+      title: 'Admin',
+      url: '/admin',
+      icon: 'admin'
     }
   ];
 
