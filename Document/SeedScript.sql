@@ -77,7 +77,7 @@ GO
 create proc USP_Get_Person_ByName
 (
 @PersonName nvarchar(300),
-@VillageId int =null
+@VillageId int =0
 )
 as
 begin
@@ -85,7 +85,7 @@ select p.PersonId,
 p.Name+isnull((select '('+  f.Name+')' from Person as f where f.PersonId=p.ParentId and f.RelationId=2),'')+'=>'+v.VillageName Name,p.VillageId
 from Person as p
 inner join Village as v on p.VillageId=v.VillageId
-where  p.Name like '%'+@PersonName+'%' and (( @VillageId<>null and p.VillageId=@VillageId)or  1=1)
+where  p.Name like '%'+@PersonName+'%' and (( @VillageId<>0 and p.VillageId=@VillageId) or  1=1)
 end
 
 GO
@@ -117,4 +117,39 @@ begin
 select UserId,r.RoleValue from UserLogin as ul 
 inner join Roles as r on ul.RoleId=r.RoleId
 where ul.UserId=@UserId and ul.UserPass=@Password
+end
+
+
+GO
+
+Create Proc Usp_SavePerson
+(
+@personId int,
+@parentId int,
+@name nvarchar(500),
+@dateOfBirth dateTime,
+@marriageDate dateTime,
+@liveTill DateTime,
+@relationId int,
+@Gender smallint,
+@villageId int,
+@shortDesc nvarchar(1000),
+@createdBy varchar(100),
+@isValid bit
+)
+as
+begin
+if exists(select 1 from Person where PersonId=@personId)
+begin
+update Person set PersonId=@parentId,Name=@name,DateOfBirth=@dateOfBirth,MarriageDate=@marriageDate,LiveTill=@liveTill
+,RelationId=@relationId,Gender=@Gender,VillageId=@villageId,ShortDesc=@shortDesc,CreatedBy=@createdBy,IsValid=@isValid
+where PersonId=@personId
+end
+else
+begin
+declare @pId int
+select @pId= case Max(PersonId) when null then  1 else Max(PersonId)+1 end from Person
+insert into Person(PersonId,ParentId,Name,DateOfBirth,MarriageDate,LiveTill,RelationId,Gender,VillageId,ShortDesc,CreatedBy,IsValid)
+values(@pId,@parentId,@name,@dateOfBirth,@marriageDate,@liveTill,@relationId,@Gender,@villageId,@shortDesc,@createdBy,@isValid)
+end
 end

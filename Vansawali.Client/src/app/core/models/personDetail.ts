@@ -11,4 +11,5 @@ export interface PersonDetail
     liveTill:Date;
     sex:Number;
     shortDesc:string;
+    imageString?:string;
 }

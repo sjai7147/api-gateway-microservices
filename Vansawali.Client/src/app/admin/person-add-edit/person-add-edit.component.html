@@ -114,6 +114,9 @@
                       <mat-list-item>
                           <!-- <button color= "secondry" type="submit">Save</button> -->
                           <input type="submit" color="primary" value="Save" >
+                          <div *ngIf="submitted" >
+                            <div class="color-red">{{message}}</div>
+                            </div>  
                       </mat-list-item>
                     </form>   
               </mat-list>

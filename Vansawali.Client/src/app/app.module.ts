@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { IonicStorageModule } from '@ionic/storage';
 import { SharedModule } from './shared/shared.module';
 import { ImageUpload } from './core/services/ImageUpload';
+import { LocalStorage } from './core/services/localStorage';
 
 
 @NgModule({
@@ -28,7 +29,7 @@ import { ImageUpload } from './core/services/ImageUpload';
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    ImageUpload
+    ImageUpload,LocalStorage
   ],
   bootstrap: [AppComponent]
 })

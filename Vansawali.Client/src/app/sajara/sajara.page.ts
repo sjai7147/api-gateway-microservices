@@ -34,7 +34,7 @@ export class SajaraPage implements OnInit {
     this.searchTerm.valueChanges.subscribe(
       term => {
         if (term != '') {
-          this.personService.search(term).subscribe(
+          this.personService.search(term,0).subscribe(
             data => {
               this.persons = data as any[];
               //console.log(data[0].BookName);

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Vansawali.Infra;
 using Vansawali.Infra.Models;
+
 namespace Person.api.Controllers
 {
     [Route("api/[controller]")]
@@ -19,7 +20,7 @@ namespace Person.api.Controllers
       // This method is used to get person details acoording to personid
         // GET api/Persons/5
         [HttpGet("GetPersonById/{personid}")]
-        public ActionResult<PersonDetails> Get(int personid)
+        public ActionResult<PersonDetail> Get(int personid)
         {
             return this._PersonService.GetPersonDetails(personid);  
         }
@@ -38,8 +39,9 @@ namespace Person.api.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IOutData Post([FromBody] PersonDetail person)
         {
+            return this._PersonService.SavePerson(person);
         }
 
         // PUT api/values/5

@@ -1,11 +1,19 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { debounceTime } from 'rxjs/internal/operators/debounceTime';
+import { PersonDetail } from '../models/personDetail';
 
 @Injectable()
 export class PersonService {
 
+    httpHeaders = new HttpHeaders({
+        'Content-Type' : 'application/json',
+        'Cache-Control': 'no-cache'
+   }); 
+    options = {
+    headers: this.httpHeaders
+    }; 
   constructor (private httpService: HttpClient) { }  
  
   search(term,villageId?) {
@@ -39,5 +47,9 @@ export class PersonService {
     ));
 
     return listOfPersonHierarchy;  
+  }
+  savePerson(persons:PersonDetail){
+    let url='http://localhost:5005/api/persons';
+   return this.httpService.post(url,persons,this.options).pipe(map((data)=>{return data;}));
   }
 }

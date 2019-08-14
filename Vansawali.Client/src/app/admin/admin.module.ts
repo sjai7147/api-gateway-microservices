@@ -13,6 +13,7 @@ import { SharedModule } from '../shared/shared.module';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { PersonService } from '../core/services/person.service';
 
+
 const routes: Routes = [
   {
     path: '',
