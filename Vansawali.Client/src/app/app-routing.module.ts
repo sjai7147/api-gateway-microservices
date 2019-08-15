@@ -9,8 +9,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'home',
-    canActivate:[AuthGuard],
+    path: 'home',    
     loadChildren: './home/home.module#HomePageModule'
   }, 
   { 
@@ -22,7 +21,8 @@ const routes: Routes = [
     loadChildren: './sajara/sajara.module#SajaraPageModule' 
   },
   { 
-    path: 'admin',    
+    path: 'admin', 
+    canActivate:[AuthGuard],   
     loadChildren: './admin/admin.module#AdminModule' 
   }
   

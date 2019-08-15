@@ -2,6 +2,8 @@ import { Platform } from '@ionic/angular';
 import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
 import { BehaviorSubject } from 'rxjs';
+import { MessageService } from './services/messageService';
+import { LoginModel } from './models/UserModels';
  
 const TOKEN_KEY = 'auth-token';
 
@@ -12,7 +14,7 @@ export class AuthenticationService {
 
   authenticationState = new BehaviorSubject(false);
  
-  constructor(private storage: Storage, private plt: Platform) { 
+  constructor(private storage: Storage, private plt: Platform,private messageService:MessageService) { 
     this.plt.ready().then(() => {
       this.checkToken();
     });
@@ -21,13 +23,21 @@ export class AuthenticationService {
   checkToken() {
     this.storage.get(TOKEN_KEY).then(res => {
       if (res) {
+        this.setAdminMenu();
         this.authenticationState.next(true);
       }
     })
   }
- 
-  login() {
-    return this.storage.set(TOKEN_KEY, 'Admin 1234567').then(() => {
+ setAdminMenu(){
+  this.messageService.sendMessage({
+    title: 'Admin',
+    url: '/admin',
+    icon: 'admin'
+  });
+ }
+  login(login:LoginModel) {
+    return this.storage.set(TOKEN_KEY, login).then(() => {
+     this.setAdminMenu();
       this.authenticationState.next(true);
     });
   }

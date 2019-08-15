@@ -14,15 +14,15 @@
    <div #login class="content" style="display:block">
    <div>
        <div class="form-row">
-          <ion-label class="form-label">UserId</ion-label>
-          <ion-input></ion-input>
+          <ion-label class="form-label" >UserId</ion-label>
+          <ion-input #userId name="mane"></ion-input>
        </div>
        <div class="form-row">
           <ion-label class="form-label" >Password</ion-label>
-          <ion-input></ion-input>
+          <ion-input #pass name="pass"></ion-input>
         </div>
         <div class="form-row centre">
-            <ion-button expand="block" (click)="userLogin()">Login</ion-button>
+            <ion-button expand="block" (click)="userLogin(userId,pass)">Login</ion-button>
         </div>
       </div> 
     
@@ -31,23 +31,23 @@
    <div>
      
        <div class="form-row">
-         <label class="form-label">Name</label>
-         <ion-input></ion-input>
+         <label class="form-label" >Name</label>
+         <ion-input #name name="name" ></ion-input>
        </div>
        <div class="form-row">
-          <label class="form-label">MobileNo</label>
-          <ion-input></ion-input>
+          <label class="form-label" >MobileNo</label>
+          <ion-input #mobileNo name="mobileNo"></ion-input>
         </div>
         <div class="form-row">
-            <label class="form-label">Email</label>
-            <ion-input></ion-input>
+            <label class="form-label" >Email</label>
+            <ion-input #email name="email"></ion-input>
           </div>
           <div class="form-row">
-              <label class="form-label">Password</label>
-              <ion-input></ion-input>
+              <label class="form-label" >Password</label>
+              <ion-input #password name="password"></ion-input>
             </div>
             <div class="form-row">
-               <ion-button expand="block" (click)="userRegister()">Register</ion-button>
+               <ion-button expand="block" (click)="userRegister(name,mobileNo,email,password)">Register</ion-button>
               </div>
         </div>
    </div>

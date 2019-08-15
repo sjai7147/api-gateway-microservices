@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { AuthenticationService } from '../core/authentication.service';
+import { MessageService } from '../core/services/messageService';
+import { RegisterService } from '../core/services/register.service';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +14,9 @@ export class LoginPage implements OnInit {
 @ViewChild('login', {read: ElementRef,static:true}) login:ElementRef;
 @ViewChild('register', {read: ElementRef,static:true}) register:ElementRef;
 @ViewChild('tabs', {read: ElementRef,static:true}) tabs:ElementRef;
-  constructor(private authService:AuthenticationService) { }
+  constructor(private authService:AuthenticationService,
+    private messageService:MessageService,
+    private registerService:RegisterService) { }
 
   ngOnInit() {
   }
@@ -32,11 +36,24 @@ export class LoginPage implements OnInit {
      
     }
   }
-  public userLogin(){
-    this.authService.login();
+  public userLogin(userid:any,pass:any){
+    this.registerService.login({UserId:userid.value,Password:pass.value,IsRemember:false}).subscribe((res)=>{
+      if(!res.error){
+        this.authService.login(res.customData);
+      }
+    },(error)=>{
+      console.log('error in login');
+    });
+    
   }
-  public userRegister(){
-
+  public userRegister(name:any,mobileNo:any,email:any,password:any){
+    this.registerService.register({UserId :email.value,Password :password.value,MobileNo :mobileNo.value,Name:name.value}).subscribe((res)=>{
+      if(!res.error){
+      console.log('user register successfully');
+      }
+    },(error)=>{
+      console.log('error in login');
+    });
   }
   public forgotPass(){
 

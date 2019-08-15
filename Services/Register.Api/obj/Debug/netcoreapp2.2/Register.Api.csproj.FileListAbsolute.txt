@@ -1,0 +1,6 @@
+C:\JaiSingh\Projects\SampleProjects\Blogs\Vansawali-client-api\Services\Register.Api\obj\Debug\netcoreapp2.2\Register.Api.csprojAssemblyReference.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\Vansawali-client-api\Services\Register.Api\obj\Debug\netcoreapp2.2\Register.Api.csproj.CoreCompileInputs.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\Vansawali-client-api\Services\Register.Api\obj\Debug\netcoreapp2.2\Register.Api.RazorAssemblyInfo.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\Vansawali-client-api\Services\Register.Api\obj\Debug\netcoreapp2.2\Register.Api.RazorAssemblyInfo.cs
+C:\JaiSingh\Projects\SampleProjects\Blogs\Vansawali-client-api\Services\Register.Api\obj\Debug\netcoreapp2.2\Register.Api.AssemblyInfoInputs.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\Vansawali-client-api\Services\Register.Api\obj\Debug\netcoreapp2.2\Register.Api.AssemblyInfo.cs

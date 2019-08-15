@@ -11,7 +11,12 @@
       <mat-card>
          
           <mat-card-content>
-               <mat-list>               
+               <mat-list>       
+                 <mat-list-item>
+                    <div *ngIf="submitted" >
+                        <div class="color-red">{{message}}</div>
+                        </div>  
+                 </mat-list-item>        
              
                 <form [formGroup]="personForm" (ngSubmit)="onSubmit()">
                   <mat-list-item >
@@ -114,9 +119,7 @@
                       <mat-list-item>
                           <!-- <button color= "secondry" type="submit">Save</button> -->
                           <input type="submit" color="primary" value="Save" >
-                          <div *ngIf="submitted" >
-                            <div class="color-red">{{message}}</div>
-                            </div>  
+                         
                       </mat-list-item>
                     </form>   
               </mat-list>

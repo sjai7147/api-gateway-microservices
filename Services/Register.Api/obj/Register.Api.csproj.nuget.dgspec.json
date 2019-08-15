@@ -1,0 +1,199 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Services\\Register.Api\\Register.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Core\\Vansawali.Database\\Vansawali.Database.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Core\\Vansawali.Database\\Vansawali.Database.csproj",
+        "projectName": "Vansawali.Database",
+        "projectPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Core\\Vansawali.Database\\Vansawali.Database.csproj",
+        "packagesPath": "C:\\Users\\singhja\\.nuget\\packages\\",
+        "outputPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Core\\Vansawali.Database\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\singhja\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\core\\vansawali.infra\\vansawali.infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\core\\vansawali.infra\\vansawali.infra.csproj",
+        "projectName": "vansawali.infra",
+        "projectPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\core\\vansawali.infra\\vansawali.infra.csproj",
+        "packagesPath": "C:\\Users\\singhja\\.nuget\\packages\\",
+        "outputPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\core\\vansawali.infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\singhja\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Core\\Vansawali.Database\\Vansawali.Database.csproj": {
+                "projectPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Core\\Vansawali.Database\\Vansawali.Database.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Services\\Register.Api\\Register.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Services\\Register.Api\\Register.Api.csproj",
+        "projectName": "Register.Api",
+        "projectPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Services\\Register.Api\\Register.Api.csproj",
+        "packagesPath": "C:\\Users\\singhja\\.nuget\\packages\\",
+        "outputPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Services\\Register.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\singhja\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Core\\Vansawali.Database\\Vansawali.Database.csproj": {
+                "projectPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Core\\Vansawali.Database\\Vansawali.Database.csproj"
+              },
+              "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\core\\vansawali.infra\\vansawali.infra.csproj": {
+                "projectPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\core\\vansawali.infra\\vansawali.infra.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
