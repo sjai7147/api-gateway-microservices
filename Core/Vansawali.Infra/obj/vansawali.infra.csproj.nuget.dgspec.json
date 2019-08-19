@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\core\\vansawali.infra\\vansawali.infra.csproj": {}
+    "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Core\\vansawali.infra\\vansawali.infra.csproj": {}
   },
   "projects": {
     "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Core\\Vansawali.Database\\Vansawali.Database.csproj": {
@@ -66,14 +66,14 @@
         }
       }
     },
-    "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\core\\vansawali.infra\\vansawali.infra.csproj": {
+    "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Core\\vansawali.infra\\vansawali.infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\core\\vansawali.infra\\vansawali.infra.csproj",
+        "projectUniqueName": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Core\\vansawali.infra\\vansawali.infra.csproj",
         "projectName": "vansawali.infra",
-        "projectPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\core\\vansawali.infra\\vansawali.infra.csproj",
+        "projectPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Core\\vansawali.infra\\vansawali.infra.csproj",
         "packagesPath": "C:\\Users\\singhja\\.nuget\\packages\\",
-        "outputPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\core\\vansawali.infra\\obj\\",
+        "outputPath": "C:\\JaiSingh\\Projects\\SampleProjects\\Blogs\\Vansawali-client-api\\Core\\vansawali.infra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

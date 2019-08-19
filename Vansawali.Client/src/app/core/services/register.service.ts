@@ -24,7 +24,7 @@ export class RegisterService {
     return this.httpService.post(url,loginInput,this.options).pipe(map((data)=>{return data;}));
   }
   register(userDetail:UserDetail):Observable<any>{
-    let url='http://localhost:5008/api/RegisterUser';
+    let url='http://localhost:5008/api/RegisterUser/register';
    return this.httpService.post(url,userDetail,this.options).pipe(map((data)=>{return data;}));
   }
 

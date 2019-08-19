@@ -50,6 +50,7 @@ export class LoginPage implements OnInit {
     this.registerService.register({UserId :email.value,Password :password.value,MobileNo :mobileNo.value,Name:name.value}).subscribe((res)=>{
       if(!res.error){
       console.log('user register successfully');
+      this.authService.login(res.customData);
       }
     },(error)=>{
       console.log('error in login');

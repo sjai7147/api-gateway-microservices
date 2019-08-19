@@ -23,21 +23,15 @@ export class AuthenticationService {
   checkToken() {
     this.storage.get(TOKEN_KEY).then(res => {
       if (res) {
-        this.setAdminMenu();
+       
         this.authenticationState.next(true);
       }
     })
   }
- setAdminMenu(){
-  this.messageService.sendMessage({
-    title: 'Admin',
-    url: '/admin',
-    icon: 'admin'
-  });
- }
+
   login(login:LoginModel) {
     return this.storage.set(TOKEN_KEY, login).then(() => {
-     this.setAdminMenu();
+    
       this.authenticationState.next(true);
     });
   }

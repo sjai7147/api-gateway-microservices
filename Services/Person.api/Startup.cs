@@ -33,6 +33,7 @@ namespace Person.api
                                 options.AddPolicy("AllowAllOrigin",
                                 builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
                                 });
+            services.Configure<AppSettings>(Configuration.GetSection("PersonImagePath"));
             services.AddScoped(typeof(IPersonService), typeof(PersonsService));
             services.AddDbContext<VansawaliContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Default")));
         }

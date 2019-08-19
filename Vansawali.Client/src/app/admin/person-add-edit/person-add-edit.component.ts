@@ -100,6 +100,7 @@ export class PersonAddEditComponent implements OnInit {
           console.log('person save operation: '+res);
           this.setDefault();
           this.message='Person saved successfully';
+          this.imageSrc='';
           this.submitted=true;
         },(error)=>{
           console.log('error in person saving');

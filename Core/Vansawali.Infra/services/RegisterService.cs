@@ -8,7 +8,7 @@ using Vansawali.Infra.Models;
 using Vansawali.Infra;
 namespace Vansawali.Infra.services
 {
-    public class RegisterService
+    public class RegisterService:IRegisterService
     {
          private VansawaliContext _VansawaliContext;
         public RegisterService(VansawaliContext VansawaliContext){
@@ -26,7 +26,8 @@ namespace Vansawali.Infra.services
                     RoleId=3,
                     CreatedOn=DateTime.Now
                 });
-                return new Output{ Error=null,Message="User added successfully" };
+                this._VansawaliContext.SaveChanges();
+                return new Output{ Error=null,Message="User added successfully",CustomData=new{ userDetail=userDetail.UserId,Name=userDetail.Name} };
             }catch(Exception ex){
                 throw ex;
             }

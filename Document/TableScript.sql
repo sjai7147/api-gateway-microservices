@@ -24,7 +24,8 @@ UserPass varchar(50),
 CreatedOn datetime default(getdate()),
 IsValid bit default(1),
 RoleId int foreign key references Roles(RoleId),
-Name nvarchar(200)
+Name nvarchar(200),
+MobileNo varchar(12) not null
 )
 GO
 IF OBJECT_ID('dbo.Village', 'U') IS NOT NULL

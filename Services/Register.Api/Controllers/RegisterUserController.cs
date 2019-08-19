@@ -33,6 +33,8 @@ namespace Register.Api.Controllers
         [HttpPost("register")]
         public IOutData Post([FromBody] LoginUserDetail value)
         {
+            Console.Clear();
+            Console.Write(string.Format("Name={0} email={1} pass={2}",value.Name,value.UserId,value.Password));
            return  this._registerService.RegisterUser(value);
         }
 
