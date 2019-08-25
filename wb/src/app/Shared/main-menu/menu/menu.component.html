@@ -1,0 +1,14 @@
+<ion-item [routerDirection]="'root'" [ngClass]="{'sub-menu': MenuType,'parent-active':Items.open}" (click)="onMenuClick(Items.title,Items.children.length)" [routerLink]="[Items.url]">
+  <ion-icon slot="start" [name]="Items.icon"></ion-icon>
+  <ion-icon slot="end" name="arrow-forward" *ngIf="Items.children?.length>0&&!Items.open"></ion-icon>
+  <ion-icon slot="end" name="arrow-down" *ngIf="Items.children?.length>0&&Items.open"></ion-icon>
+  <ion-label [class.parent-active]="Items.open">
+    {{Items.title}}
+  </ion-label>
+</ion-item>
+
+<div *ngIf="Items.children.length">
+  <ion-menu-toggle [class.menu-toggle-hidden]="!Items.open"  *ngFor="let c of Items.children">
+   <app-menu [Items]="c" [MenuType]="true"></app-menu>
+  </ion-menu-toggle>
+</div>
