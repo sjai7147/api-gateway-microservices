@@ -1,0 +1,84 @@
+{
+    "ReRoutes": [
+      {
+        "DownstreamPathTemplate": "/api/{version}/register/{everything}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 7880
+          }
+        ],
+        "UpstreamPathTemplate": "/registeruser/{version}/{everything}",
+        "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+      },
+      {
+        "DownstreamPathTemplate": "/api/{version}/register",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 7880
+          }
+        ],
+        "UpstreamPathTemplate": "/registeruser/{version}",
+        "UpstreamHttpMethod": [ "GET" ]
+      },
+      {
+        "DownstreamPathTemplate": "/api/{version}/{everything}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 80
+          }
+        ],
+        "UpstreamPathTemplate": "/message/{version}/{everything}",
+        "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+        
+      },
+      {
+        "DownstreamPathTemplate": "/api/{version}/{catchAll}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 80
+          }
+        ],
+        "UpstreamPathTemplate": "/message/{version}/{catchAll}",
+        "UpstreamHttpMethod": [ "GET" ]
+        
+      },
+      {
+        "DownstreamPathTemplate": "/api/{version}/{everything}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 80
+          }
+        ],
+        "UpstreamPathTemplate": "/chat/{version}/{everything}",
+        "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+      },
+      {
+        "DownstreamPathTemplate": "/api/{version}/{everything}",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 80
+          }
+        ],
+        "UpstreamPathTemplate": "/person/{version}/{everything}",
+        "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+      }
+  
+    ],
+      "GlobalConfiguration": {
+        "RequestIdKey": "OcRequestId",
+        "AdministrationPath": "/administration",
+        "BaseUrl":"http:localhost:7000"
+      }
+    }

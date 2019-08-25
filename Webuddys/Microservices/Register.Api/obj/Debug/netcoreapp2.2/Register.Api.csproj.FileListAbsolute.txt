@@ -1,0 +1,14 @@
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\Register.Api\bin\Debug\netcoreapp2.2\Register.Api.deps.json
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\Register.Api\bin\Debug\netcoreapp2.2\Register.Api.runtimeconfig.json
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\Register.Api\bin\Debug\netcoreapp2.2\Register.Api.runtimeconfig.dev.json
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\Register.Api\bin\Debug\netcoreapp2.2\Register.Api.dll
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\Register.Api\bin\Debug\netcoreapp2.2\Register.Api.pdb
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\Register.Api\obj\Debug\netcoreapp2.2\Register.Api.csprojAssemblyReference.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\Register.Api\obj\Debug\netcoreapp2.2\Register.Api.csproj.CoreCompileInputs.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\Register.Api\obj\Debug\netcoreapp2.2\Register.Api.RazorAssemblyInfo.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\Register.Api\obj\Debug\netcoreapp2.2\Register.Api.RazorAssemblyInfo.cs
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\Register.Api\obj\Debug\netcoreapp2.2\Register.Api.AssemblyInfoInputs.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\Register.Api\obj\Debug\netcoreapp2.2\Register.Api.AssemblyInfo.cs
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\Register.Api\obj\Debug\netcoreapp2.2\Register.Api.RazorTargetAssemblyInfo.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\Register.Api\obj\Debug\netcoreapp2.2\Register.Api.dll
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\Register.Api\obj\Debug\netcoreapp2.2\Register.Api.pdb

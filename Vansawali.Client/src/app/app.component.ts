@@ -17,12 +17,6 @@ export class AppComponent implements OnDestroy,OnInit {
   ngOnInit() {
     this.appPages= Menu.UserView;
     this.messageService.getMessage().subscribe(m=>{     
-      // if(this.appPages.find(p=>p.title===m.title)){
-      //   //menu already exists
-      // }else{
-      //   this.appPages.push(m.message);
-      //   //this.route.navigate([m.message.url]);
-      // }
      
     });
   }

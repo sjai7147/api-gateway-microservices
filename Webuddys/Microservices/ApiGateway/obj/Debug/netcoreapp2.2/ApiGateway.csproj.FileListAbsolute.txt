@@ -1,0 +1,14 @@
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\ApiGateway\bin\Debug\netcoreapp2.2\ApiGateway.deps.json
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\ApiGateway\bin\Debug\netcoreapp2.2\ApiGateway.runtimeconfig.json
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\ApiGateway\bin\Debug\netcoreapp2.2\ApiGateway.runtimeconfig.dev.json
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\ApiGateway\bin\Debug\netcoreapp2.2\ApiGateway.dll
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\ApiGateway\bin\Debug\netcoreapp2.2\ApiGateway.pdb
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\ApiGateway\obj\Debug\netcoreapp2.2\ApiGateway.csprojAssemblyReference.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\ApiGateway\obj\Debug\netcoreapp2.2\ApiGateway.csproj.CoreCompileInputs.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\ApiGateway\obj\Debug\netcoreapp2.2\ApiGateway.RazorAssemblyInfo.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\ApiGateway\obj\Debug\netcoreapp2.2\ApiGateway.RazorAssemblyInfo.cs
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\ApiGateway\obj\Debug\netcoreapp2.2\ApiGateway.AssemblyInfoInputs.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\ApiGateway\obj\Debug\netcoreapp2.2\ApiGateway.AssemblyInfo.cs
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\ApiGateway\obj\Debug\netcoreapp2.2\ApiGateway.RazorTargetAssemblyInfo.cache
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\ApiGateway\obj\Debug\netcoreapp2.2\ApiGateway.dll
+C:\JaiSingh\Projects\SampleProjects\Blogs\Webuddys\Microservices\ApiGateway\obj\Debug\netcoreapp2.2\ApiGateway.pdb
